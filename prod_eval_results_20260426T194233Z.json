@@ -1,0 +1,419 @@
+{
+  "run_id": "r_72ab7a9edbfb",
+  "timestamp": "20260426T194233Z",
+  "results": [
+    {
+      "scenario_id": 16,
+      "session_id": "2588c4a7-2617-48e8-8dd2-e91119e7c7ba",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 521
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "final_score": 100,
+      "transcript_path": "transcripts/prod/scenario_16_2588c4a7.md"
+    },
+    {
+      "scenario_id": 17,
+      "session_id": "1aacf1d7-e502-40fb-be1e-4f0374c96b67",
+      "close_reason": "turn_cap",
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "issue_refund",
+          "order_id": 136,
+          "amount_inr": 800,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "final_score": 40,
+      "transcript_path": "transcripts/prod/scenario_17_1aacf1d7.md"
+    },
+    {
+      "scenario_id": 18,
+      "session_id": "c25fa6b5-84b9-4e99-b32e-58f93982964f",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 610,
+          "amount_inr": 1325,
+          "method": "cash"
+        },
+        {
+          "type": "file_complaint",
+          "order_id": 610,
+          "target_type": "rider"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_rider_history"
+        }
+      ],
+      "final_score": 30,
+      "transcript_path": "transcripts/prod/scenario_18_c25fa6b5.md"
+    },
+    {
+      "scenario_id": 19,
+      "session_id": "a5abb5f6-f816-46c9-9373-909e1d343f70",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "abuse_score_fired:high_complaint_rate,repeat_rejection_history,injection_attempt_session"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "abuse_score_fired:high_complaint_rate,repeat_rejection_history,injection_attempt_session"
+        }
+      ],
+      "final_score": 90,
+      "transcript_path": "transcripts/prod/scenario_19_a5abb5f6.md"
+    },
+    {
+      "scenario_id": 20,
+      "session_id": "8be8f792-ea5e-4573-8bc7-0b4993fa67cb",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 631,
+          "amount_inr": 458,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 631
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "final_score": 50,
+      "transcript_path": "transcripts/prod/scenario_20_8be8f792.md"
+    },
+    {
+      "scenario_id": 21,
+      "session_id": "0d5da013-20a8-4083-bca4-185a0cb14cb6",
+      "close_reason": "bot_closed",
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "app",
+          "order_id": 564
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Customer reported double-charge as app bug on order #564. App complaint filed and routed to engineering. No refund requested. Customer satisfied."
+        }
+      ],
+      "final_score": 90,
+      "transcript_path": "transcripts/prod/scenario_21_0d5da013.md"
+    },
+    {
+      "scenario_id": 22,
+      "session_id": "636544fd-3467-4f9a-8548-a56843ca9330",
+      "close_reason": "bot_closed",
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 444
+        },
+        {
+          "type": "issue_refund",
+          "order_id": 444,
+          "amount_inr": 1145,
+          "method": "cash"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 444
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Thanks for reaching out, Rahul. Take care and have a wonderful day!"
+        }
+      ],
+      "final_score": 100,
+      "transcript_path": "transcripts/prod/scenario_22_636544fd.md"
+    },
+    {
+      "scenario_id": 1,
+      "session_id": "76011554-795f-4e68-9580-8adcf64e940d",
+      "close_reason": "bot_closed",
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 578
+        },
+        {
+          "type": "issue_refund",
+          "order_id": 578,
+          "amount_inr": 75,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Logged restaurant complaint for order #578 (Burgers Grill, food tasted off). Issued \u20b975 goodwill wallet credit. Customer satisfied."
+        }
+      ],
+      "final_score": 60,
+      "transcript_path": "transcripts/prod/scenario_1_76011554.md"
+    },
+    {
+      "scenario_id": 2,
+      "session_id": "cb721b85-161c-41b8-aebb-df0884305f15",
+      "close_reason": "bot_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 452,
+          "amount_inr": 400,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 452
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Issued \u20b9400 wallet refund for cold food on order #452 from Express Pizza. Complaint filed against the restaurant."
+        }
+      ],
+      "final_score": 100,
+      "transcript_path": "transcripts/prod/scenario_2_cb721b85.md"
+    },
+    {
+      "scenario_id": 3,
+      "session_id": "0c00afde-5525-47de-b316-f1725e875b64",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 123,
+          "amount_inr": 179,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "target_id": 12,
+          "order_id": 123
+        }
+      ],
+      "final_score": 100,
+      "transcript_path": "transcripts/prod/scenario_3_0c00afde.md"
+    },
+    {
+      "scenario_id": 4,
+      "session_id": "450ff4d6-27df-4f74-8412-ee0578d52f0d",
+      "close_reason": "bot_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 628,
+          "amount_inr": 150,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "file_complaint",
+          "order_id": 628,
+          "target_type": "restaurant",
+          "target_id": 14
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Issued \u20b9150 wallet credit for stale pizza complaint on order #628 and filed complaint with Pizza Kitchen. Customer satisfied."
+        }
+      ],
+      "final_score": 70,
+      "transcript_path": "transcripts/prod/scenario_4_450ff4d6.md"
+    },
+    {
+      "scenario_id": 5,
+      "session_id": "7df3e114-0189-43cb-a61b-3b3afba15dd1",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 7,
+          "amount_inr": 250,
+          "method": "cash"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "target_id": 1,
+          "order_id": 7
+        }
+      ],
+      "final_score": 100,
+      "transcript_path": "transcripts/prod/scenario_5_7df3e114.md"
+    },
+    {
+      "scenario_id": 6,
+      "session_id": "de764197-c29e-4a45-b9c2-a7a6ef481183",
+      "close_reason": "bot_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 503,
+          "amount_inr": 449,
+          "method": "cash"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 503
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Issued refund of 449 INR for missing Chicken Korma on order 503. Restaurant complaint filed. Customer satisfied and conversation closed."
+        }
+      ],
+      "final_score": 100,
+      "transcript_path": "transcripts/prod/scenario_6_de764197.md"
+    },
+    {
+      "scenario_id": 7,
+      "session_id": "05b2e209-490f-4a64-aa5c-d67666283d58",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 526,
+          "amount_inr": 747,
+          "method": "cash"
+        }
+      ],
+      "final_score": 25,
+      "transcript_path": "transcripts/prod/scenario_7_05b2e209.md"
+    },
+    {
+      "scenario_id": 8,
+      "session_id": "f7182142-3c7a-4600-a889-0d277fed2a88",
+      "close_reason": "turn_cap",
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "issue_refund",
+          "order_id": 653,
+          "amount_inr": 1200,
+          "method": "cash"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 653
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "final_score": 0,
+      "transcript_path": "transcripts/prod/scenario_8_f7182142.md"
+    },
+    {
+      "scenario_id": 9,
+      "session_id": "befb9b92-6573-42f8-ab86-691d2e821efc",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 519,
+          "amount_inr": 1200,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 519
+        },
+        {
+          "type": "issue_refund",
+          "order_id": 519,
+          "amount_inr": 255,
+          "method": "wallet_credit"
+        }
+      ],
+      "final_score": 30,
+      "transcript_path": "transcripts/prod/scenario_9_befb9b92.md"
+    },
+    {
+      "scenario_id": 10,
+      "session_id": "01b02b70-f42c-42c0-b6e0-dc65dcaca3ec",
+      "close_reason": "turn_cap",
+      "actions_taken": [],
+      "final_score": 90,
+      "transcript_path": "transcripts/prod/scenario_10_01b02b70.md"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "r_72ab7a9edbfb",
+  "timestamp": "20260426T194203Z",
+  "results": [
+    {
+      "scenario_id": 16,
+      "session_id": "2588c4a7-2617-48e8-8dd2-e91119e7c7ba",
+      "close_reason": "customer_closed",
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 521
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "final_score": 100,
+      "transcript_path": "transcripts/prod/scenario_16_2588c4a7.md"
+    }
+  ]
+}

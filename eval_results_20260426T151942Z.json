@@ -1,0 +1,116 @@
+{
+  "run_id": "r_7713ab945099",
+  "timestamp": "20260426T151942Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Thank you for reaching out, Rajesh. Take care and I hope this gets sorted out fo"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "7b5625af-2e77-459b-9c03-fa4b931e17f1"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Rider conduct complaint filed for order #564. Conversation closed after customer farewell."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "511676da-b9ac-4977-bb0c-157179af54e6"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "9965dd8b-c937-4e3c-b7a4-6d9893b48d6d"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "abuse_score_fired:high_complaint_rate,repeat_rejection_history,injection_attempt_session"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "81b153b4-787e-4634-8eac-d2af36825a40"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 564,
+          "amount_inr": 100,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 564
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Issued \u20b9100 wallet credit and filed restaurant quality complaint for order #564 (Pizza Spice) \u2014 sparse toppings on unspecified pizza. Customer satisfied with resolution."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "11d084aa-678e-4221-85cc-0457d2ce07f4"
+    }
+  ]
+}

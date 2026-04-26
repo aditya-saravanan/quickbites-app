@@ -1,0 +1,125 @@
+{
+  "run_id": "r_127067466652",
+  "timestamp": "20260426T132540Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_refund_history"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "587e8c27-035e-4a68-baf4-75536ebc3f6a"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Customer reported rude rider behaviour for order #564. Rider complaint filed. No refund requested or issued. Customer confirmed satisfied and done."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "dffd96d7-10d1-45c5-8d5b-f3c12a7cb2a2"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "d29dbba4-d17c-4119-b49f-c2a797f609ac"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "0d8a393f-6f32-4a82-9d88-0bc5a91fe5af"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Issued \u20b9229 wallet credit for possible missing Garlic Bread on order #564. Customer satisfied."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "f00633ed-0c72-4e35-bcbd-1b4e9f5b9a1f"
+    }
+  ]
+}

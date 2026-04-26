@@ -1,0 +1,117 @@
+{
+  "run_id": "r_35a7f010e613",
+  "timestamp": "20260426T104352Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Completely understood, Rajesh \u2014 your case is logged and escalated with all the d"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "02da85ea-13d7-49a8-b2ed-cd3f1cce97b5"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": false,
+      "failures": [
+        "missing_required_action:file_complaint"
+      ],
+      "actions_taken": [],
+      "close_reason": "customer_closed",
+      "session_id": "36ce0fd8-f56d-44a4-b441-258ef2ed8012"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "c60f8162-ab4a-4931-a376-298e96c915ef"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "01bbbfa2-3967-4f5e-8125-a99b23373cd1"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Thanks for reaching out, Rajesh \u2014 hope it gets sorted quickly for you too! Take"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "ebca3108-b932-4dbb-b9f8-decbc2a72bfa"
+    }
+  ]
+}

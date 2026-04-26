@@ -1,0 +1,130 @@
+{
+  "run_id": "r_d2bfd865f77e",
+  "timestamp": "20260426T193100Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "issue_refund",
+          "order_id": 564,
+          "amount_inr": 1000,
+          "method": "cash"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 564
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Issued \u20b91000 UPI refund for cold/soggy pizza quality issue on order #564. Restaurant complaint filed. Customer satisfied."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "c0e81f0b-21af-43fd-8b38-c04509feaba0"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Rider complaint filed for rude behaviour on order #564. No compensation issued. Customer satisfied and confirmed closure."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "a7a08a13-b981-481a-93cb-fdcca2c37db4"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Understood \u2014 it will show up. Thanks for bearing with us, Naina. Take care."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "9ac5ac47-8e9d-43ff-aff5-e1cf7a34a775"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "abuse_score_fired:high_complaint_rate,repeat_rejection_history,injection_attempt_session"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "abuse_score_fired:high_complaint_rate,repeat_rejection_history,injection_attempt_session"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "bf74e022-7989-4a17-bc28-3c2735d8447b"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 564,
+          "amount_inr": 229,
+          "method": "cash"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "cf106a1b-c361-4eb5-8064-926807c806db"
+    }
+  ]
+}

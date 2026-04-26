@@ -1,0 +1,87 @@
+{
+  "run_id": "r_d5a487329945",
+  "timestamp": "20260426T103601Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": false,
+      "failures": [
+        "missing_any_of:['issue_refund', 'escalate_to_human']"
+      ],
+      "actions_taken": [
+        {
+          "type": "close",
+          "outcome_summary": "Bye, Rajesh! Take care! \ud83d\udc4b"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "4c7e2d62-57ac-446b-8b5d-314ad996c6b8"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": false,
+      "failures": [
+        "missing_required_action:file_complaint"
+      ],
+      "actions_taken": [
+        {
+          "type": "close",
+          "outcome_summary": "Great, take care! \ud83d\ude0a"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "6e339a5b-3371-4ea2-a574-58e3e46dc1d7"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "37edaf0e-04a0-43ee-bbbf-ca15b51b72e8"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "close",
+          "outcome_summary": "Take care! \ud83d\ude0a"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "5a88c6f4-c668-4c8b-8193-83c1e3d5680c"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [],
+      "close_reason": "customer_closed",
+      "session_id": "b7eb5a07-e910-4a2a-9b20-e1da3fabaf2c"
+    }
+  ]
+}

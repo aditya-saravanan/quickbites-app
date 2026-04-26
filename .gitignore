@@ -1,0 +1,17 @@
+# Secrets — NEVER commit
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/
+
+# One-off local dump
+dev_eval_transcripts.json

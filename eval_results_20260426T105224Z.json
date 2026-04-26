@@ -1,0 +1,121 @@
+{
+  "run_id": "r_9e16fbc8ef52",
+  "timestamp": "20260426T105224Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "db9ce8b7-d691-4316-b764-fd12023120ef"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": false,
+      "failures": [
+        "close_reason_unexpected:turn_cap_not_in_['bot_closed', 'customer_closed']"
+      ],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        }
+      ],
+      "close_reason": "turn_cap",
+      "session_id": "cdee3676-41ba-4ca0-bd0a-5d7c13df5062"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "14bdaef6-dfc5-44e2-ac2b-fe415039af89"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "turn_cap",
+      "session_id": "683ad070-fe28-492b-829a-dcd0a0a2217f"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 564,
+          "amount_inr": 229,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Issued \u20b9229 wallet credit for possibly missing Garlic Bread from order #564. Customer satisfied and conversation closed."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "41b0dce6-8e2a-4177-9dfb-1d17632e8e39"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "run_id": "r_dbe8a5efb5a7",
+  "timestamp": "20260426T161856Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": false,
+      "failures": [
+        "close_reason_unexpected:turn_cap_not_in_['bot_closed', 'customer_closed']"
+      ],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "turn_cap",
+      "session_id": "1ad0796c-f744-4e9e-b391-fa38a9a48c01"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "4ff82c48-94ba-4c7e-93f4-6600a7e9a075"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_complaint_history"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "ca82864f-e533-494e-a3ae-70cf9e2736df"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "abuse_score_fired:high_complaint_rate,repeat_rejection_history,injection_attempt_session"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "0066d4f1-3b20-4f2a-870a-24fa3c8351d1"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 564,
+          "amount_inr": 300,
+          "method": "wallet_credit"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Bye! Take care!"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "f0f6b9cc-3a89-4cb8-ab59-7152918415a7"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "run_id": "r_96f67ad2550f",
+  "timestamp": "20260426T133400Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 564
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "Customer reports all pizza items and garlic bread arrived cold on order #564 from Pizza Spice. Total food subtotal is \u20b91,593 which exceeds the \u20b9500 threshold for direct refund. Customer requests UPI cash refund. Abuse score is 0.0, no signals fired. Complaint is credible \u2014 all items affected. Needs human review to issue \u20b91,593 cash refund to UPI."
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Take care!"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "1e3560a8-a1b3-4621-a4da-fb2e6c94c5cb"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "58ce8c45-d831-4444-b3b8-1037095d869d"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "flag_abuse",
+          "reason": "abuse_pattern_observed_no_specific_reason_given"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "feb453e0-dde7-40c2-aee4-940ba305780b"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "2eaed926-1ffa-43f1-a222-313be806065f"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        }
+      ],
+      "close_reason": "turn_cap",
+      "session_id": "b5ca7e79-55d8-49d2-abf5-63a270e2b338"
+    }
+  ]
+}

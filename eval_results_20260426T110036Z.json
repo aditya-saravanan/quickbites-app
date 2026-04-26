@@ -1,0 +1,113 @@
+{
+  "run_id": "r_8cbbfe50ca38",
+  "timestamp": "20260426T110036Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "auto_coerced_disclosure_scrub: original response cited cites_abuse_score"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "We'll make sure someone follows up with you, Rajesh. Thanks for your patience \u2014"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "486d5cdd-577d-4f1f-9e2f-4c42e126668f"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "099582c7-7d5d-48a4-b4b8-6b73d12c53b5"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Understood, Naina. Your escalation is on record and a colleague will follow up."
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "de298c58-51ba-4ba9-aa5b-8da3abbca6a4"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Take care! \ud83d\ude0a"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "a2d8b3c2-a355-43cc-9562-5bcede7ad514"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Bye, take care! \ud83d\udc4b"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "6fbb7cca-3138-4c7c-88b7-6d4bbf6d67e9"
+    }
+  ]
+}

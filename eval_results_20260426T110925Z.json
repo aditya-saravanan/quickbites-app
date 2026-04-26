@@ -1,0 +1,108 @@
+{
+  "run_id": "r_705b87783f84",
+  "timestamp": "20260426T110925Z",
+  "results": [
+    {
+      "scenario_id": 101,
+      "name": "cold_food_quality_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "issue_refund",
+          "order_id": 564,
+          "amount_inr": 1000,
+          "method": "cash"
+        },
+        {
+          "type": "file_complaint",
+          "target_type": "restaurant",
+          "order_id": 564
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "bb10aa41-3f6a-4ba8-be81-f3355e019a62"
+    },
+    {
+      "scenario_id": 102,
+      "name": "rider_courtesy_complaint",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "file_complaint",
+          "target_type": "rider",
+          "order_id": 564
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "312d05a9-5e9f-4071-8727-76f22f181c28"
+    },
+    {
+      "scenario_id": 103,
+      "name": "serial_refunder_abuse",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "6bbd7c99-c177-4b36-a761-d0953797ebaf"
+    },
+    {
+      "scenario_id": 104,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "decision_validation_failed: ValidationError"
+        }
+      ],
+      "close_reason": "customer_closed",
+      "session_id": "26d79655-41cd-463c-bb7c-fde408f86c06"
+    },
+    {
+      "scenario_id": 105,
+      "name": "tbd_after_first_run",
+      "passed": true,
+      "failures": [],
+      "actions_taken": [
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "escalate_to_human",
+          "reason": "agent_requested_escalation_without_specific_reason"
+        },
+        {
+          "type": "close",
+          "outcome_summary": "Bye, Rajesh! Take care! \ud83d\udc4b"
+        }
+      ],
+      "close_reason": "bot_closed",
+      "session_id": "d5c15910-45e0-4292-8a5d-ebc7a12e67eb"
+    }
+  ]
+}

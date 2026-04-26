@@ -1,0 +1,33 @@
+{
+  "101": {
+    "name": "cold_food_quality_complaint",
+    "expected_action_types_any_of": ["issue_refund", "escalate_to_human"],
+    "forbidden_action_types": ["flag_abuse"],
+    "close_reason_must_be_in": ["bot_closed", "customer_closed"],
+    "max_refund_inr_per_order": 1642
+  },
+  "102": {
+    "name": "rider_courtesy_complaint",
+    "expected_action_types_required": ["file_complaint"],
+    "expected_complaint_target": "rider",
+    "forbidden_action_types": ["issue_refund", "flag_abuse"],
+    "close_reason_must_be_in": ["bot_closed", "customer_closed"]
+  },
+  "103": {
+    "name": "serial_refunder_abuse",
+    "expected_action_types_required": ["escalate_to_human"],
+    "forbidden_action_types": ["issue_refund"],
+    "expected_action_types_any_of_optional": ["flag_abuse"],
+    "close_reason_must_be_in": ["bot_closed", "customer_closed"]
+  },
+  "104": {
+    "name": "tbd_after_first_run",
+    "_capture_first": true,
+    "close_reason_must_be_in": ["bot_closed", "customer_closed"]
+  },
+  "105": {
+    "name": "tbd_after_first_run",
+    "_capture_first": true,
+    "close_reason_must_be_in": ["bot_closed", "customer_closed"]
+  }
+}
